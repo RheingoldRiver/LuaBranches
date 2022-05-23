@@ -1,0 +1,28 @@
+{
+	"name": "LuaBranches",
+	"version": "0.0.1",
+	"author": [
+		"Megan Cutrofello"
+	],
+	"url": "https://github.com/RheingoldRiver/LuaBranches",
+	"requires": {
+		"MediaWiki": ">= 1.35"
+	},
+	"descriptionmsg": "lua-branches-desc",
+	"license-name": "GPL-2.0-or-later",
+	"MessagesDirs": {
+		"LuaBranches": [
+			"i18n"
+		]
+	},
+	"config": {
+		"LuaBranchesBranchPattern": "/%s"
+	},
+	"AutoloadClasses": {
+		"LuaBranchesHooks": "includes/LuaBranchesHooks.php"
+	},
+	"Hooks": {
+		"ScribuntoGetInvokeOptions": "LuaBranchesHooks::onScribuntoGetInvokeOptions",
+		"ScribuntoLoadPackageModuleTitle": "LuaBranchesHooks::onScribuntoLoadPackageModuleTitle"
+	}
+}
