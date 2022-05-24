@@ -1,6 +1,6 @@
 {
 	"name": "LuaBranches",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"author": [
 		"Megan Cutrofello"
 	],
@@ -16,7 +16,7 @@
 		]
 	},
 	"config": {
-		"LuaBranchesBranchPattern": "/%s"
+		"LuaBranchesBranchPattern": "%name%/%branch%"
 	},
 	"AutoloadClasses": {
 		"LuaBranchesHooks": "includes/LuaBranchesHooks.php"
