@@ -17,7 +17,7 @@ class LuaBranchesHooks {
 		$branch = $options['branch'];
 		if ( $branch === null ) return;
 		$branchPattern = $GLOBALS['wgLuaBranchesBranchPattern'];
-		$branchedName = $name . str_replace('%s', $branch, $branchPattern);
+		$branchedName = str_replace(['%name%', '%branch%'], [$name, $branch], $branchPattern);
 		$branchedTitle = Title::newFromText( $branchedName );
 		$title = $branchedTitle->exists() ? $branchedTitle : $title;
 		return true;

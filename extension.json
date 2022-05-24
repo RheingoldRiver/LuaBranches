@@ -16,7 +16,7 @@
 		]
 	},
 	"config": {
-		"LuaBranchesBranchPattern": "/%s"
+		"LuaBranchesBranchPattern": "%name%/%branch%"
 	},
 	"AutoloadClasses": {
 		"LuaBranchesHooks": "includes/LuaBranchesHooks.php"
